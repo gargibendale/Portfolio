@@ -10,12 +10,23 @@
     color: white;
 }
 
+body {
+    background-image: url('background6.jpg');
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+    overflow-y: auto;
+}
+
 #hello-div {
     height: 100vh;
-    background-image: url('background5.jpg');
+    /* background-image: url('background5.jpg');
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed; */
+    /* Keep the background image fixed */
+    overflow-y: auto;
     position: relative;
     text-align: left;
     display: flex;
@@ -24,21 +35,16 @@
     text-wrap: wrap;
 }
 
+#hello-div::-webkit-scrollbar {
+    display: none;
+}
+
 #hello-div h1 {
     color: white;
 }
 
-/* 
-.divider {
-    height: 1px;
-    background: white;
-    color: white;
-    width: 100%;
-    margin: 20px auto;
-} */
-
 hr {
-    width: 30%;
+    width: 45%;
     border: none;
     border-top: 1px solid #ffffff;
     /* Change color and style as needed */
@@ -47,13 +53,55 @@ hr {
     /* Adds space above the divider */
 }
 
-.content {
+#content {
+    height: 60vh;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     /* Stack items vertically */
+    align-items: center;
+}
+
+.info {
+    width: 30vw;
     justify-content: left;
-    align-items: start;
+    align-self: flex-start;
     text-align: left;
+}
+
+.divider {
+    align-self: flex-end;
+    /* Align the projects div to the right */
+    text-align: right;
+    justify-content: right;
+    width: 30%;
+    border: none;
+    border-top: 1px solid #ffffff;
+    /* Change color and style as needed */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.niyojak,
+.paradis,
+.py-beginner,
+.price-tracker {
+    width: 30vw;
+    align-self: flex-end;
+    /* Align the projects div to the right */
+    text-align: right;
+    justify-content: right;
+    /* Align the text inside the projects div to the right */
+}
+
+.price-tracker {
+    padding-bottom: 60px;
+}
+
+.niyojak h1,
+h2 {
+    font-weight: 300;
+    padding-bottom: 7px;
 }
 
 #hello-div span,
@@ -69,4 +117,9 @@ strike {
     font-family: "Raleway", sans-serif;
     font-weight: 200;
     font-style: normal;
+}
+
+.copyright {
+    font-size: 12px;
+    padding-bottom: 10px;
 }
