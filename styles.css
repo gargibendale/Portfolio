@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
 
 * {
     font-family: "Raleway", sans-serif;
-
     margin: 0;
     padding: 0;
     color: white;
@@ -20,12 +20,6 @@ body {
 
 #hello-div {
     height: 100vh;
-    /* background-image: url('background5.jpg');
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed; */
-    /* Keep the background image fixed */
     overflow-y: auto;
     position: relative;
     text-align: left;
@@ -44,7 +38,7 @@ body {
 }
 
 hr {
-    width: 45%;
+    width: 60%;
     border: none;
     border-top: 1px solid #ffffff;
     /* Change color and style as needed */
@@ -68,7 +62,8 @@ hr {
 }
 
 #content a:hover {
-    color: rgb(64, 141, 183);
+    color: rgb(255, 0, 0);
+    font-weight: 400;
     text-decoration: none;
 }
 
@@ -78,6 +73,13 @@ hr {
     justify-content: left;
     align-self: flex-start;
     text-align: left;
+    padding-bottom: 10px;
+}
+
+#real-span {
+    font-family: "Raleway", sans-serif;
+    color: rgb(255, 19, 19);
+    font-weight: 400
 }
 
 .info h1 {
@@ -89,7 +91,7 @@ hr {
     /* Align the projects div to the right */
     text-align: right;
     justify-content: right;
-    width: 30%;
+    width: 45%;
     border: none;
     border-top: 1px solid #ffffff;
     /* Change color and style as needed */
@@ -97,6 +99,13 @@ hr {
     margin-bottom: 10px;
 }
 
+.niyojak,
+.paradis,
+.py-beginner {
+    padding-bottom: 10px;
+}
+
+.heading2,
 .niyojak,
 .paradis,
 .py-beginner,
@@ -109,23 +118,26 @@ hr {
     /* Align the text inside the projects div to the right */
 }
 
-/* .price-tracker {
-    padding-bottom: 60px;
-} */
-
-.niyojak h1,
-.socials h1,
-p {
-    font-weight: 300;
-    padding-bottom: 7px;
+.price-tracker {
+    padding-bottom: 10px;
 }
 
-h2 {
-    font-weight: 300;
-    padding-bottom: 7px;
+.heading2 h1 {
+    font-weight: 100;
+    padding-bottom: 0;
 }
 
-#hello-div span,
+.socials h1 {
+    font-weight: 100;
+    padding-bottom: 4px;
+}
+
+h3 {
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+
+#hello-div .typefont,
 strike {
     color: white;
     font-family: "Special Elite", system-ui;
@@ -133,16 +145,28 @@ strike {
     font-style: normal;
 }
 
-#hello-div p {
+.info p {
     color: white;
     font-family: "Raleway", sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-style: normal;
+}
+
+.niyojak p,
+.paradis p,
+.py-beginner p,
+.price-tracker p,
+.socials p {
+    font-weight: 200;
 }
 
 .copyright {
     font-size: 12px;
     padding-bottom: 10px;
+}
+
+.copyright p {
+    font-weight: 200;
 }
 
 .icons {
@@ -159,6 +183,6 @@ strike {
 }
 
 .icon i {
-    font-size: 2em;
+    font-size: 1.6em;
     margin-right: 10px;
 }
