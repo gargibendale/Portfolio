@@ -4,7 +4,7 @@
 
 * {
     font-family: "Raleway", sans-serif;
-    font-weight: 100;
+
     margin: 0;
     padding: 0;
     color: white;
@@ -39,7 +39,7 @@ body {
     display: none;
 }
 
-#hello-div h1 {
+#hello-div {
     color: white;
 }
 
@@ -62,11 +62,26 @@ hr {
     align-items: center;
 }
 
-.info {
+#content a {
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+#content a:hover {
+    color: rgb(64, 141, 183);
+    text-decoration: none;
+}
+
+.info,
+.socials {
     width: 30vw;
     justify-content: left;
     align-self: flex-start;
     text-align: left;
+}
+
+.info h1 {
+    font-weight: 100;
 }
 
 .divider {
@@ -94,11 +109,17 @@ hr {
     /* Align the text inside the projects div to the right */
 }
 
-.price-tracker {
+/* .price-tracker {
     padding-bottom: 60px;
-}
+} */
 
 .niyojak h1,
+.socials h1,
+p {
+    font-weight: 300;
+    padding-bottom: 7px;
+}
+
 h2 {
     font-weight: 300;
     padding-bottom: 7px;
@@ -122,4 +143,22 @@ strike {
 .copyright {
     font-size: 12px;
     padding-bottom: 10px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+
+.icon {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.icon i {
+    font-size: 2em;
+    margin-right: 10px;
 }
