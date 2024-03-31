@@ -211,4 +211,9 @@ strike {
     .info {
         width: 60vw;
     }
+
+    .copyright {
+        font-size: 10px;
+        padding-bottom: 10px;
+    }
 }
