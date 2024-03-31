@@ -186,3 +186,29 @@ strike {
     font-size: 1.6em;
     margin-right: 10px;
 }
+
+@media only screen and (max-width: 477px) {
+
+    #content {
+        width: 70vw;
+
+    }
+
+
+    .socials,
+    .heading2,
+    .niyojak,
+    .paradis,
+    .py-beginner,
+    .price-tracker {
+        width: 60vw;
+    }
+
+    .info h1 {
+        width: 50vw;
+    }
+
+    .info {
+        width: 60vw;
+    }
+}
