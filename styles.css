@@ -100,15 +100,16 @@ hr {
 }
 
 .Niramaya,
+.niyojak,
 .SmartKrishi,
 .FaceRecognition {
     padding-bottom: 10px;
 }
 
 .heading2,
-.niyojak,
-.paradis,
-.py-beginner,
+.Niramaya,
+.niyojak .SmartKrishi,
+.FaceRecognition,
 .price-tracker {
     width: 30vw;
     align-self: flex-end;
@@ -152,9 +153,10 @@ strike {
     font-style: normal;
 }
 
+.Niramaya p,
 .niyojak p,
-.paradis p,
-.py-beginner p,
+.SmartKrishi p,
+.FaceRecognition p,
 .price-tracker p,
 .socials p {
     font-weight: 200;
@@ -198,6 +200,9 @@ strike {
     .socials,
     .heading2,
     .niyojak,
+    .Niramaya,
+    .SmartKrishi,
+    .FaceRecognition,
     .paradis,
     .py-beginner,
     .price-tracker {
